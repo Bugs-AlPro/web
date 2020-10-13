@@ -12,34 +12,41 @@
 <body>
     <div class="body">
         <main class="main">
-            <div class="header">
-                <div class="header__photo">
-                    <img src="img/start-page2.webp" alt="Фотография автора">
+            <div class="header-wrap">
+                <div class="header-cover">
+                    <img class="header-cover__photo" src="img/start-page2.webp" alt="Фотография автора">
                 </div>
                 <div class="container">
-                    <div class="header__content">
-                        <a href="index.html">
-                            <img src="img/logo.png" alt="Логотип">
-                        </a>
-                        <nav>
-                            <ul class="header__list">
-                                <li>
-                                    <a href="index.html#posted" class="header__link">Статьи</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#about" class="header__link">Обо мне</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#portfolio" class="header__link">Портфолио</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#contact" class="header__link">Написать мне</a>
-                                </li>
-                            </ul>
-                        </nav>
+                    <div class="container--cover-height">
+                        <div class="header-content">
+                            <div class="header-content__logo">
+                                <div class="logo">
+                                    <a href="index.html" class="logo__link">
+                                        <img class="logo__img" src="img/logo.png" alt="Логотип">
+                                    </a>
+                                </div>
+                            </div>
+                            <nav class="header-content__nav nav">
+                                <ul class="nav__list">
+                                    <li class="nav__item">
+                                        <a href="#posted" class="nav__link">Статьи</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#about" class="nav__link">Обо мне</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#portfolio" class="nav__link">Портфолио</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#contact" class="nav__link">Написать мне</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- 
             <section class="article">
                 <div class="container">
                     <div class="container--article">
@@ -183,26 +190,27 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__container">
-                    <ul class="footer__list">
-                        <li>
-                            <a href="https://vk.com/" class="footer__link">ВК</a>
-                        </li>
-                        <li>
-                            <a href="https://telegram.org/" class="footer__link">Телеграм</a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/" class="footer__link">Инстаграм</a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" class="footer__link">Твиттер</a>
-                        </li>
-                    </ul>
+         -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-block">
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a href="https://vk.com/" class="social-list__link">ВК</a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="https://telegram.org/" class="social-list__link">Телеграм</a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="https://www.instagram.com/" class="social-list__link">Инстаграм</a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="https://twitter.com/" class="social-list__link">Твиттер</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
     </div>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Spectral+SC:ital,wght@0,400;0,700;1,700&display=swap"
