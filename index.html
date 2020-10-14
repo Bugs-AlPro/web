@@ -13,45 +13,43 @@
         <div class="header-cover">
             <img class="header-cover__photo" src="img/start-photo.webp" alt="Фотография автора">
         </div>
-        <div class="container">
-            <div class="container--cover-height">
-                <div class="header-content">
-                    <div class="header-content__logo">
-                        <div class="logo">
-                            <a class="logo__link">
-                                <img class="logo__img" src="img/logo.png" alt="Логотип">
-                            </a>
-                        </div>
+        <div class="container container--cover-height">
+            <div class="header-content">
+                <div class="header-content__logo">
+                    <div class="logo">
+                        <a class="logo__link">
+                            <img class="logo__img" src="img/logo.png" alt="Логотип">
+                        </a>
                     </div>
-                    <nav class="header-content__nav nav">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="#posted" class="nav__link">Статьи</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#about" class="nav__link">Обо мне</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#portfolio" class="nav__link">Портфолио</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#contact" class="nav__link">Написать мне</a>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
+                <nav class="header-content__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#posted" class="nav__link">Статьи</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Обо мне</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">Портфолио</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Написать мне</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
 
     <main class="main">
-        <h1 class="hidden__text">Блог копирайтера</h1>
-        <section class="posted" id="posted">
+        <h1 class="hidden-text">Блог копирайтера</h1>
+        <section class="posted-wrap" id="posted">
             <div class="container">
-                <div class="posted__container">
+                <div class="posted">
                     <header class="posted__header">
-                        <h2 class="tittle">Все статьи</h2>
-                        <select name="posted-tags" id="posted-tags" class="posted__tags">
+                        <h2 class="posted__tittle tittle">Все статьи</h2>
+                        <select class="posted__tags tags" name="posted-tags" id="posted-tags">
                             <option value="select">Выбрать тему</option>
                             <option value="travel">путешествия</option>
                             <option value="city">город</option>
@@ -60,123 +58,124 @@
                             <option value="recept">рецепты</option>
                         </select>
                     </header>
-                    <ul>
-                        <div class="posted__articles__small">
-                            <li>
-                                <article class="posted__article">
-                                    <a href="page-link.html" class="posted__article__link">
-                                        <div class="posted__article__img">
-                                            <img src="img/img1.webp" alt="Фото берлин">
+                    <ul class="posted__articles articles">
+                        <div class="articles__smal">
+                            <li class="articles__item">
+                                <article class="article">
+                                    <a href="page-link.html" class="article__link">
+                                        <div class="article__cover">
+                                            <img class="article__img" src="img/img1.webp" alt="Фото берлин">
                                         </div>
-                                        <h3 class="posted__article__tittle">Путешествия в Берлин в августа</h3>
-                                        <p class="posted__article__text">Летний месяц я провела в столице Германии
+                                        <h3 class="article__tittle">Путешествия в Берлин в августа</h3>
+                                        <p class="article__text">Летний месяц я провела в столице Германии
                                             вместе с
                                             друзьями. И вот как это было!</p>
+
+                                        <div class="article__down tag-block">
+                                            <p class="tag-block__tags">Тэги: <span
+                                                    class="tag-block__tag">путешествия</span>
+                                            </p>
+                                            <time class="tag-block__date" datetime="2020-09-20">20.09.2020</time>
+                                        </div>
                                     </a>
-                                    <div class="article__small__down">
-                                        <p class="posted__article__tag">Тэги: <span
-                                                class="posted__article__name__tag">путешествия</span>
-                                        </p>
-                                        <time class="posted__article__date" datetime="2020-09-20">20.09.2020</time>
-                                    </div>
                                 </article>
                             </li>
-                            <li>
-                                <article class="posted__article">
-                                    <a href="page-link.html" class="posted__article__link">
-                                        <div class="posted__article__img">
-                                            <img src="img/img2.webp" alt="Коктеэль колдбрю">
+                            <li class="articles__item">
+                                <article class="article">
+                                    <a href="page-link.html" class="article__link">
+                                        <div class="article__cover">
+                                            <img class="article__img" src="img/img2.webp" alt="Коктеэль колдбрю">
                                         </div>
-                                        <h3 class="posted__article__tittle">Где выпить колдбрю в Москве</h3>
-                                        <p class="posted__article__text">Собрала для вас список любимых кофеен, где
+                                        <h3 class="article__tittle">Где выпить колдбрю в Москве</h3>
+                                        <p class="article__text">Собрала для вас список любимых кофеен, где
                                             продают
                                             летний
                                             напиток.</p>
+
+                                        <div class="article__down tag-block">
+                                            <p class="tag-block__tags">Тэги: <span class="tag-block__tag">город</span>
+                                            </p>
+                                            <time class="tag-block__date" datetime="2020-07-24">24.07.2020</time>
+                                        </div>
                                     </a>
-                                    <div class="article__small__down">
-                                        <p class="posted__article__tag">Тэги: <span
-                                                class="posted__article__name__tag">город</span>
-                                        </p>
-                                        <time class="posted__article__date" datetime="2020-07-24">24.07.2020</time>
-                                    </div>
                                 </article>
                             </li>
-                            <li>
-                                <article class="posted__article">
-                                    <a href="page-link.html" class="posted__article__link">
-                                        <div class="posted__article__img">
-                                            <img src="img/img3.webp" alt="Книги">
+                            <li class="articles__item">
+                                <article class="article">
+                                    <a href="page-link.html" class="article__link">
+                                        <div class="article__cover">
+                                            <img class="article__img" src="img/img3.webp" alt="Книги">
                                         </div>
-                                        <h3 class="posted__article__tittle">Прочитано: книжные рекомендации</h3>
-                                        <p class="posted__article__text">Рассказываю о прочитанных за последнее
+                                        <h3 class="article__tittle">Прочитано: книжные рекомендации</h3>
+                                        <p class="article__text">Рассказываю о прочитанных за последнее
                                             время
                                             книгах:
                                             фавориты и
                                             провалы.</p>
+
+                                        <div class="article__down tag-block">
+                                            <p class="tag-block__tags">Тэги: <span class="tag-block__tag">книги</span>
+                                            </p>
+                                            <time class="tag-block__date" datetime="2020-07-15">15.07.2020</time>
+                                        </div>
                                     </a>
-                                    <div class="article__small__down">
-                                        <p class="posted__article__tag">Тэги: <span
-                                                class="posted__article__name__tag">книги</span>
-                                        </p>
-                                        <time class="posted__article__date" datetime="2020-07-15">15.07.2020</time>
-                                    </div>
                                 </article>
                             </li>
                         </div>
-                        <div class="posted__articles__big">
-                            <li>
-                                <article class="posted__article">
-                                    <div class="posted__article__img">
-                                        <a href="page-link.html" class="posted__article__link">
-                                            <img src="img/img4.webp" alt="Фото цветов">
-                                        </a>
-                                    </div>
-                                    <div class="posted__article__big__text">
-                                        <a href="page-link.html" class="posted__article__link">
-                                            <h3 class="posted__article__tittle">Снимки на плёнку</h3>
-                                            <p class="posted__article__text">Поделилась с вами весенними
+                        <div class="articles__big">
+                            <li class="articles__item">
+                                <article class="article-big">
+                                    <a href="page-link.html" class="article-big__link">
+                                        <div class="article-big__cover">
+                                            <img class="article-big__img" src="img/img4.webp" alt="Фото цветов">
+                                        </div>
+                                        <div class="article-big__content">
+                                            <h3 class="article-big__tittle">Снимки на плёнку</h3>
+                                            <p class="article-big__text">Поделилась с вами весенними
                                                 фотографиями, и
                                                 секретами
                                                 удачных
                                                 сникмов.</p>
-                                        </a>
-                                        <div class="article__big__down">
-                                            <p class="posted__article__tag">Тэги: <span
-                                                    class="posted__article__name__tag">фотографии</span>
-                                            </p>
-                                            <time class="posted__article__date" datetime="2020-06-29">29.06.2020</time>
+                                            <div class="article-big__down tag-block">
+                                                <p class="tag-block__tags">Тэги: <span
+                                                        class="tag-block__tag">фотографии</span>
+                                                </p>
+                                                <time class="tag-block__date" datetime="2020-06-29">29.06.2020</time>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
+
                                 </article>
                             </li>
-                            <li>
-                                <article class="posted__article">
-                                    <div class="posted__article__img">
-                                        <a href="page-link.html" class="posted__article__link">
-                                            <img src="img/img5.webp" alt="Чизкейк с ягодой">
-                                        </a>
-                                    </div>
-                                    <div class="posted__article__big__text">
-                                        <a href="page-link.html" class="posted__article__link">
-                                            <h3 class="posted__article__tittle">Домашний чизкейк</h3>
-                                            <p class="posted__article__text">Что может быть лучше чизкейка с
+                            <li class="articles__item">
+                                <article class="article-big">
+                                    <a href="page-link.html" class="article-big__link">
+                                        <div class="article-big__cover">
+                                            <img class="article-big__img" src="img/img5.webp" alt="Чизкейк с ягодой">
+                                        </div>
+                                        <div class="article-big__content">
+                                            <h3 class="article-big__tittle">Домашний чизкейк</h3>
+                                            <p class="article-big__text">Что может быть лучше чизкейка с
                                                 сезонными
                                                 ягодами?
                                                 Только
                                                 домашний чизкейк!</p>
-                                        </a>
-                                        <div class="article__big__down">
-                                            <p class="posted__article__tag">Тэги: <span
-                                                    class="posted__article__name__tag">рецепты</span>
-                                            </p>
-                                            <time class="posted__article__date" datetime="2020-06-24">24.06.2020</time>
+
+                                            <div class="article-big__down tag-block">
+                                                <p class="tag-block__tags">Тэги: <span
+                                                        class="tag-block__tag">рецепты</span>
+                                                </p>
+                                                <time class="tag-block__date" datetime="2020-06-24">24.06.2020</time>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </article>
                             </li>
                         </div>
                     </ul>
+
                     <button class="posted__button button" type="button">Показать ещё</button>
+
                 </div>
             </div>
         </section>
