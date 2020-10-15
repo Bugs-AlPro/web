@@ -235,75 +235,60 @@ img {vertical-align: top;}
 }
 
 /* portfolio style  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.portfolio__container {
+.portfolio-wrap {
+    padding-top: 85px;
+}
+.portfolio {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
 }
-.portfolio__articles {
+.portfolio__tittle {
+    align-self: center;
+}
+.portfolio__exemples {
     display: flex;
     gap: 20px;
 }
-.portfolio__article {
-    display: flex;
-    flex-direction: column;
+.exemple__link {
     position: relative;
 }
-.portfolio__article__img img {
+.exemple__img {
     border-radius: 15px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
-.portfolio__article__text {
+.exemple__content {
     position: absolute;
     top: 25%;
-    left: 5%;
-    max-width: 90%;
-    height: auto;
-}
-.portfolio__article__link {
+    left: 4%;
+    max-width: 92%;
+    min-height: 50%;
+    height: auto;    
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 25px;
-    height: 100%;
     align-items: center;
     text-align: center;
 }
-.portfolio__article__link span {
+.exemple__name {
     font-family: 'Spectral SC', serif;
     font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 40px;
 }
-.portfolio__article__link h3 {
+.exemple__tittle {
     font-family: 'Spectral SC', serif;
     font-size: 18px;
     margin-top: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
-.portfolio__article__link--white span {
+.exemple__name--color,
+.exemple__tittle--color,
+.exemple__preview--color {
     color: #fff; 
-    font-family: 'Spectral SC', serif;
-    font-size: 20px;
 }
-.portfolio__article__link--white h3 {
-    color: #fff;
-    font-family: 'Spectral SC', serif;
-    font-size: 18px;
-}
-.portfolio__article__link--white p {
-    color: #fff;
+.portfolio__button {
+    margin-top: 100px;
 }
 
 /* contact style  */
