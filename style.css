@@ -134,13 +134,9 @@ img {vertical-align: top;}
     flex-direction: column;
     gap: 50px;
 }
-.articles__smal {
+.articles__list {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-}
-.articles__big {
-    display: flex;
     gap: 20px;
 }
 .article__img {
@@ -238,18 +234,20 @@ img {vertical-align: top;}
     line-height: 40px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* portfolio style  */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .portfolio__container {
     display: flex;
