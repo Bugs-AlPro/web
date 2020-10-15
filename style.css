@@ -93,7 +93,6 @@ img {vertical-align: top;}
 .tittle {
     font-family: 'Spectral SC', serif;
     font-size: 36px;
-    align-self: center;
 }
 .button {
     width: 224px;
@@ -114,11 +113,14 @@ img {vertical-align: top;}
 .posted {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
 }
 .posted__header {
     display: flex;
     justify-content: space-between;
+}
+.posted__tittle {
+    align-self: center;
 }
 .tags {
     width: 230px;
@@ -136,7 +138,6 @@ img {vertical-align: top;}
     display: flex;
     justify-content: space-between;
     gap: 20px;
-
 }
 .articles__big {
     display: flex;
@@ -170,7 +171,6 @@ img {vertical-align: top;}
 .article-big__img {
     border-radius: 15px;
     height: 552px;
-    /* width: 387px; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .article-big__content {
@@ -199,43 +199,55 @@ img {vertical-align: top;}
     margin-top: 100px;
 }
 
-
-
-
-
 /* about style  */
 
-.about__container,
-.about__text {
+.about-wrap {
+    padding-top: 85px;
+}
+.about {
     display: flex;
     flex-direction: column;
+    gap: 50px;
+}
+.about__tittle {
+    align-self: center;
 }
 .about__content {
     display: flex;
     gap: 25px;
 }
-.about__container {
-    gap: 40px;
-}
-.about__img img {
+.about__img {
     border-radius: 15px;
 }
 .about__text {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
-.about__text__story {
+.about__story {
     padding: 25px 25px;
 }
-.about__text__story p {
+.about__p {
     margin-top: 25px;
 }
-.about__text__site {
+.about__cite {
     font-size: 30px;
     font-style: italic;
     padding: 40px 0px 40px 25px;
     border-left: 3px solid #D7D1C9;
     line-height: 40px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* portfolio style  */
 
