@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scc/style.css">
     <title>Desktop-1</title>
 </head>
 
@@ -302,28 +302,29 @@
                 </div>
             </div>
         </section>
-        <section class="contact" id="contact">
+
+        <section class="contact-wrap" id="contact">
             <div class="container">
-                <div class="contact__container">
-                    <h2 class="tittle">Написать мне</h2>
-                    <div class="contact__background__img">
-                        <img src="img/img10.webp" alt="Фоновая картинка">
+                <div class="contact">
+                    <h2 class="contact__tittle tittle">Написать мне</h2>
+                    <div class="contact__cover">
+                        <img class="contact__img" src="img/img10.webp" alt="Фоновая картинка дерево на голубом фоне">
                     </div>
-                    <form action="#" class="contact__form" method="POST">
-                        <div class="contact__form__top">
-                            <div class="contact__form__top__left">
-                                <label for="name" class="contact__input__tittle">Ваше имя</label>
-                                <input class="contact__input__field" type="text" name="name" id="name"
+                    <form class="contact__form" action="#" method="POST">
+                        <div class="contact__form-top">
+                            <div class="contact__form-left">
+                                <label class="contact__input-label" for="name">Ваше имя</label>
+                                <input class="contact__input" type="text" name="name" id="name"
                                     placeholder="Иван Иванов" required>
                             </div>
-                            <div class="contact__form__top__right">
-                                <label for="email" class="contact__input__tittle">Email</label>
-                                <input class="contact__input__field" type="text" name="email" id="email"
+                            <div class="contact__form-right">
+                                <label class="contact__input-label" for="email">Email</label>
+                                <input class="contact__input" type="text" name="email" id="email"
                                     placeholder="google@gmail.com" required>
                             </div>
                         </div>
-                        <label for="message" class="contact__input__tittle">Сообщение</label>
-                        <textarea class="contact__input__field" name="message" id="message" rows="11" cols="40"
+                        <label class="contact__input-label" for="message">Сообщение</label>
+                        <textarea class="contact__input-text" name="message" id="message" rows="11" cols="40"
                             minlength="10" maxlength="200" placeholder="Напишите здесь ваше сообщение."></textarea>
                         <input type="submit" class="contact__button button" value="Отправить">
                     </form>
@@ -331,6 +332,7 @@
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-block">
@@ -351,6 +353,7 @@
             </div>
         </div>
     </footer>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Spectral+SC:ital,wght@0,400;0,700;1,700&display=swap"
         rel="stylesheet">
