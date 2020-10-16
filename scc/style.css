@@ -418,6 +418,10 @@ img {vertical-align: top;}
     align-items: flex-end;
     font-size: 32px;
 }
+.like-good {
+    background-color: yellow;
+}
+
 .content__social {
     display: flex;
     gap: 32px;
