@@ -1,4 +1,4 @@
-// cоздание Лайков и их счетчика. 
+// cоздание Лайков и счетчика к ним 
 
 let hend = document.querySelector('.like__img');              // элемент поднятого пальца
 let likesNumber = document.querySelector('.like__count');     // цифра счетчика в html>span

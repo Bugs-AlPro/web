@@ -419,7 +419,8 @@ img {vertical-align: top;}
     font-size: 32px;
 }
 .like-good {
-    background-color: yellow;
+
+    filter: drop-shadow(0 0 3px rgb(58, 218, 37))
 }
 
 .content__social {
