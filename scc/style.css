@@ -510,3 +510,6 @@ img {vertical-align: top;}
     padding: 20px;
     height: 100%;
 }
+.red-text {
+    color: red;
+}

@@ -145,21 +145,24 @@
                             <ul class="comments__list">
                                 <li class="comments__item comment">
                                     <div class="comment__header">
-                                        <img class="comment__img" src="img/avatar-1.webp" alt="">
+                                        <img class="comment__img" src="img/avatar-1.webp"
+                                            alt="Аватар автора комментария">
                                         <p class="comment__user-name">Иван Петров</p>
                                     </div>
                                     <p class="comment__text">Отличная статья! Спасибо.</p>
                                 </li>
                                 <li class="comments__item comment">
                                     <div class="comment__header">
-                                        <img class="comment__img" src="img/avatar-2.webp" alt="">
+                                        <img class="comment__img" src="img/avatar-2.webp"
+                                            alt="Аватар автора комментария">
                                         <p class="comment__user-name">Ксения Ксения</p>
                                     </div>
                                     <p class="comment__text">Отличный текст, добавила в закладки.</p>
                                 </li>
                                 <li class="comments__item comment">
                                     <div class="comment__header">
-                                        <img class="comment__img" src="img/avatar-3.webp" alt="">
+                                        <img class="comment__img" src="img/avatar-3.webp"
+                                            alt="Аватар автора комментария">
                                         <p class="comment__user-name">Иван Иванов</p>
                                     </div>
                                     <p class="comment__text">Основательный материал! Можешь посоветовать какие-то книги
@@ -183,14 +186,17 @@
                                             required placeholder="Почта">
                                         <label class="comment-f__label hidden-text" for="email-user">Почта</label>
                                     </div>
-                                    <input class="contact-f__button button" type="submit" value="Отправить">
+                                    <button class="contact-f__button button" type="submit" value="Отправить"
+                                        disabled>Отправить</button>
                                 </div>
                                 <div class="comment-f__right">
                                     <label class="comment-f__label hidden-text" for="comment-field">Поле для
                                         комментария</label>
                                     <textarea class="comment-f__text" name="message" id="comment-field" rows="8"
-                                        cols="35" minlength="10" maxlength="200"
-                                        placeholder="Написать комментарий..."></textarea>
+                                        cols="35" placeholder="Написать комментарий..." required minlength="10"
+                                        maxlength="220"></textarea>
+                                    <!-- minlength="10" maxlength="210" -->
+
                                 </div>
 
                             </form>
