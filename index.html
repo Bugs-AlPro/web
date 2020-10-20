@@ -54,18 +54,18 @@
                         <h2 class="posted__tittle tittle">Все статьи</h2>
                         <label class="posted__tags-label hidden-text" for="posted-tags">Выбрать тему</label>
                         <select class="posted__tags tags" name="posted-tags" id="posted-tags">
-                            <option value="select">Выбрать тему</option>
-                            <option value="travel">путешествия</option>
-                            <option value="city">город</option>
-                            <option value="book">книги</option>
-                            <option value="photo">фотографии</option>
-                            <option value="recept">рецепты</option>
+                            <option class="tags__item" value="all">Выбрать тему</option>
+                            <option class="tags__item" value="travel">путешествия</option>
+                            <option class="tags__item" value="city">город</option>
+                            <option class="tags__item" value="book">книги</option>
+                            <option class="tags__item" value="photo">фотографии</option>
+                            <option class="tags__item" value="recept">рецепты</option>
                         </select>
                     </header>
                     <div class="posted__articles articles">
                         <div class="articles__smal">
                             <ul class="articles__list">
-                                <li class="articles__item">
+                                <li class="articles__item" data-category="travel">
                                     <article class="article">
                                         <a href="page-link.html" class="article__link">
                                             <div class="article__cover">
@@ -84,7 +84,7 @@
                                         </a>
                                     </article>
                                 </li>
-                                <li class="articles__item">
+                                <li class="articles__item" data-category="city">
                                     <article class="article">
                                         <a href="page-link.html" class="article__link">
                                             <div class="article__cover">
@@ -105,7 +105,7 @@
                                         </a>
                                     </article>
                                 </li>
-                                <li class="articles__item">
+                                <li class="articles__item" data-category="book">
                                     <article class="article">
                                         <a href="page-link.html" class="article__link">
                                             <div class="article__cover">
@@ -131,7 +131,7 @@
                         </div>
                         <div class="articles__big">
                             <ul class="articles__list">
-                                <li class="articles__item">
+                                <li class="articles__item" data-category="photo">
                                     <article class="article-big">
                                         <a href="page-link.html" class="article-big__link">
                                             <div class="article-big__cover">
@@ -156,7 +156,7 @@
 
                                     </article>
                                 </li>
-                                <li class="articles__item">
+                                <li class="articles__item" data-category="recept">
                                     <article class="article-big">
                                         <a href="page-link.html" class="article-big__link">
                                             <div class="article-big__cover">
@@ -328,8 +328,9 @@
                         </div>
                         <label class="contact__input-label" for="message">Сообщение</label>
                         <textarea class="contact__input-text" name="message" id="message" rows="11" cols="40"
-                            minlength="10" maxlength="200" placeholder="Напишите здесь ваше сообщение."></textarea>
-                        <input type="submit" class="contact__button button" value="Отправить">
+                            minlength="10" maxlength="220" placeholder="Напишите здесь ваше сообщение."
+                            required></textarea>
+                        <button type="submit" class="contact__button button" value="Отправить">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -360,6 +361,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Spectral+SC:ital,wght@0,400;0,700;1,700&display=swap"
         rel="stylesheet">
+    <script src="js/contact-count.js"></script>
+    <script src="js/filter.js"></script>
 </body>
 
 </html>
